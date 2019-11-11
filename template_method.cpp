@@ -1,0 +1,7 @@
+
+
+namespace patterns {
+	class TemplateMethod {
+
+	};
+}
