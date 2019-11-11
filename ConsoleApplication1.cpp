@@ -5,6 +5,7 @@
 #include <typeinfo>
 #include "singleton.cpp"
 #include "composite.cpp"
+#include "template_method.cpp"
 
 
 int sumOfDifferences(const std::vector<int>& arr) {
@@ -42,6 +43,10 @@ int main()
 {
 	patterns::TestComposite *testComposite = new patterns::TestComposite;
 	testComposite->test();
+	patterns::CityJorney* c_jorney = new patterns::CityJorney;
+	c_jorney->take_trip();
+	patterns::BeachJorney* b_jorney = new patterns::BeachJorney;
+	b_jorney->take_trip();
 	return  0;
 }
 
