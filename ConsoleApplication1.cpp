@@ -6,6 +6,7 @@
 #include "singleton.cpp"
 #include "composite.cpp"
 #include "template_method.cpp"
+#include "abstract_factory.cpp"
 
 
 int sumOfDifferences(const std::vector<int>& arr) {
@@ -47,6 +48,7 @@ int main()
 	c_jorney->take_trip();
 	patterns::BeachJorney* b_jorney = new patterns::BeachJorney;
 	b_jorney->take_trip();
+	patterns::test_abstract_factory();
 	return  0;
 }
 
