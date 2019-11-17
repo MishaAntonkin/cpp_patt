@@ -7,10 +7,10 @@
 #include "composite.cpp"
 #include "template_method.cpp"
 #include "abstract_factory.cpp"
+#include "pool.cpp"
 
 
 int sumOfDifferences(const std::vector<int>& arr) {
-	//your code here
 	if (arr.size() == 0) {
 		return 0;
 	}
@@ -49,6 +49,7 @@ int main()
 	patterns::BeachJorney* b_jorney = new patterns::BeachJorney;
 	b_jorney->take_trip();
 	patterns::test_abstract_factory();
+    patterns::test_pool();
 	return  0;
 }
 
